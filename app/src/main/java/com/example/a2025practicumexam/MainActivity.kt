@@ -21,6 +21,8 @@ import androidx.compose.material3.Text
 import androidx.compose.ui.Alignment
 import android.content.Intent
 import androidx.compose.material3.Button
+import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.unit.sp
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -33,7 +35,10 @@ class MainActivity : ComponentActivity() {
                     horizontalAlignment=Alignment.CenterHorizontally, //this is going to center the composables horizontally
                     verticalArrangement = Arrangement.Center  )
                 {
-                    Text(text = "Welcome")
+                    Text(text = "Welcome",
+                            fontSize = 30.sp,
+                        fontWeight = FontWeight.Black
+                    )
                     Button(onClick = {
                         var start = Intent(this@MainActivity, MainScreen::class.java)
                         startActivity(start)
