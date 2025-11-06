@@ -94,14 +94,14 @@ class MainScreen : ComponentActivity() {
 
                                     Spacer(modifier = Modifier.size(15.dp))
 
-                                    OutlinedTextField(
-                                        value = MovieData.Comments[index],
-                                        onValueChange = { MovieData.Comments[index] = it },
-                                        label = { Text("Comments") },
-                                        modifier = Modifier.width(300.dp)
-                                    )
+                                   // OutlinedTextField(
+                                   //     value = MovieData.Comments[index],
+                                   //     onValueChange = { MovieData.Comments[index] = it },
+                                   //     label = { Text("Comments") },
+                                   //     modifier = Modifier.width(300.dp)
+                                    //)
 
-                                    Spacer(modifier = Modifier.size(15.dp))
+                                    //Spacer(modifier = Modifier.size(15.dp))
 
 
                                 }

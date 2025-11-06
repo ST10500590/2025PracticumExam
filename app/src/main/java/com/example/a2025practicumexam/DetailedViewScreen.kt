@@ -53,35 +53,35 @@ class DetailedViewScreen : ComponentActivity() {
                             Text(text = " Movie Title")
                             Text(text = "$MovieTitle")
                         }
-                        Divider(
-                            color = Color.Gray, // Customize divider color
-                            modifier = Modifier
-                                .fillMaxHeight() // Make the divider fill the available height
-                                .width(1.dp))
+                        //Divider(
+                        //    color = Color.Gray, // Customize divider color
+                        //    modifier = Modifier
+                        //        .fillMaxHeight() // Make the divider fill the available height
+                        //        .width(1.dp))
                         Column()
                         {
                             Text(text = " Director")
                             Text(text = "$Director")
                         }
-                        Divider(
-                            color = Color.Gray, // Customize divider color
-                            modifier = Modifier
-                                .fillMaxHeight() // Make the divider fill the available height
-                                .width(1.dp))
+                        //Divider(
+                        //    color = Color.Gray, // Customize divider color
+                        //    modifier = Modifier
+                        //        .fillMaxHeight() // Make the divider fill the available height
+                        //        .width(1.dp))
                         Column()
                         {
                             Text(text = " Ratings")
                             Text(text = "$Ratings")
                         }
-                        Divider(
-                            color = Color.Gray, // Customize divider color
-                            modifier = Modifier
-                                .fillMaxHeight() // Make the divider fill the available height
-                                .width(1.dp))
+                        //Divider(
+                        //    color = Color.Gray, // Customize divider color
+                        //    modifier = Modifier
+                        //        .fillMaxHeight() // Make the divider fill the available height
+                        //        .width(1.dp))
 
                         Column()
                         {
-                            Text(text = " Comments")
+                            Text(text = " Reviews")
                             Text(text = "$Comments")
                         }
 
