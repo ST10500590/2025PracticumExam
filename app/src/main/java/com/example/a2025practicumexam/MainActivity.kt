@@ -41,7 +41,7 @@ class MainActivity : ComponentActivity() {
                     )
                     Button(onClick = {
                         var start = Intent(this@MainActivity, MainScreen::class.java)
-                        startActivity(start)
+                        startActivity(start) //Start button takes user to the main screen
                     })
                     {
                         Text("Start") // Text of the button to be "Start"

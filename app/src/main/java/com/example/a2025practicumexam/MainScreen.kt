@@ -68,7 +68,7 @@ class MainScreen : ComponentActivity() {
                                     verticalArrangement = Arrangement.Center)
                                 {
                                     OutlinedTextField(
-                                        value = MovieData.MovieTitle[index],
+                                        value = MovieData.MovieTitle[index], //
                                         onValueChange = { MovieData.MovieTitle[index] = it },
                                         label = { Text("Movie Title") },
                                         modifier = Modifier.width(300.dp)
@@ -109,25 +109,16 @@ class MainScreen : ComponentActivity() {
                         }
                     }
 
-
-
-
-
-
-//
-
-
-
                     Row()
                     {
-                        Button(onClick = {})
+                        Button(onClick = {})// Button adds the movie to the arrays
                         {
                             Text("Add Movie") // Text of the button to be "Start"
                         }
 
                         Button(onClick = {
                             var ViewReviews = Intent(this@MainScreen, DetailedViewScreen::class.java)
-                            startActivity(ViewReviews)
+                            startActivity(ViewReviews) // Button takes the user to the reviews screen
                         })
                         {
                             Text("View Reviews") // Text of the button to be "Start"

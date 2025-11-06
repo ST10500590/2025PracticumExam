@@ -50,7 +50,7 @@ class DetailedViewScreen : ComponentActivity() {
 
                         Column()
                         {
-                            Text(text = " Movie Title")
+                            Text(text = " Movie Title") //Display the movie titles
                             Text(text = "$MovieTitle")
                         }
                         //Divider(
@@ -60,7 +60,7 @@ class DetailedViewScreen : ComponentActivity() {
                         //        .width(1.dp))
                         Column()
                         {
-                            Text(text = " Director")
+                            Text(text = " Director") //Display the movie Directors
                             Text(text = "$Director")
                         }
                         //Divider(
@@ -70,7 +70,7 @@ class DetailedViewScreen : ComponentActivity() {
                         //        .width(1.dp))
                         Column()
                         {
-                            Text(text = " Ratings")
+                            Text(text = " Ratings") //Display the movie Ratings
                             Text(text = "$Ratings")
                         }
                         //Divider(
@@ -81,14 +81,14 @@ class DetailedViewScreen : ComponentActivity() {
 
                         Column()
                         {
-                            Text(text = " Reviews")
+                            Text(text = " Reviews") //Display the movie Comments
                             Text(text = "$Comments")
                         }
 
                     }
                     Button(onClick = {
                         var back = Intent(this@DetailedViewScreen, MainScreen::class.java)
-                        startActivity(back)
+                        startActivity(back) //back button is clicked goes back to the main Screen
                     })
                     {
                         Text("Back") // Text of the button to be "Back"
