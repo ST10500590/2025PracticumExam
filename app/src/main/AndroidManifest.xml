@@ -12,6 +12,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme._2025PracticumExam">
         <activity
+            android:name=".DetailedViewScreen"
+            android:exported="false"
+            android:label="@string/title_activity_detailed_view_screen"
+            android:theme="@style/Theme._2025PracticumExam" />
+        <activity
+            android:name=".MainScreen"
+            android:exported="false"
+            android:label="@string/title_activity_main_screen"
+            android:theme="@style/Theme._2025PracticumExam" />
+        <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
