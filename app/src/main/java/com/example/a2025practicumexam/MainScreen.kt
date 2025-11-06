@@ -62,7 +62,7 @@ class MainScreen : ComponentActivity() {
 
                     LazyColumn(Modifier.weight(1f)) {
                         itemsIndexed(MovieData.MovieTitle) { index, MovieTitle ->
-                            Card(Modifier.fillParentMaxWidth().padding(vertical = 6.dp)) {
+                            Card(Modifier.fillParentMaxWidth().padding(vertical =3.dp)) {
                                 Column(modifier= Modifier.fillMaxSize(), //to expand the wrap to fill the entire screen
                                     horizontalAlignment=Alignment.CenterHorizontally, //this is going to center the composables horizontally
                                     verticalArrangement = Arrangement.Center)
@@ -71,16 +71,16 @@ class MainScreen : ComponentActivity() {
                                         value = MovieData.MovieTitle[index],
                                         onValueChange = { MovieData.MovieTitle[index] = it },
                                         label = { Text("Movie Title") },
-                                        modifier = Modifier.width(100.dp)
+                                        modifier = Modifier.width(300.dp)
                                     )
 
-                                    Spacer(modifier = Modifier.size(30.dp))
+                                    Spacer(modifier = Modifier.size(15.dp))
 
                                     OutlinedTextField(
                                         value = MovieData.Director[index],
                                         onValueChange = { MovieData.Director[index] = it },
                                         label = { Text("Director") },
-                                        modifier = Modifier.width(100.dp)
+                                        modifier = Modifier.width(300.dp)
                                     )
 
                                     Spacer(modifier = Modifier.size(30.dp))
@@ -89,19 +89,19 @@ class MainScreen : ComponentActivity() {
                                         value = MovieData.Ratings[index],
                                         onValueChange = { MovieData.Ratings[index] = it },
                                         label = { Text("Ratings") },
-                                        modifier = Modifier.width(100.dp)
+                                        modifier = Modifier.width(300.dp)
                                     )
 
-                                    Spacer(modifier = Modifier.size(30.dp))
+                                    Spacer(modifier = Modifier.size(15.dp))
 
                                     OutlinedTextField(
                                         value = MovieData.Comments[index],
                                         onValueChange = { MovieData.Comments[index] = it },
                                         label = { Text("Comments") },
-                                        modifier = Modifier.width(100.dp)
+                                        modifier = Modifier.width(300.dp)
                                     )
 
-                                    Spacer(modifier = Modifier.size(30.dp))
+                                    Spacer(modifier = Modifier.size(15.dp))
 
 
                                 }
